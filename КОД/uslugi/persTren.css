@@ -1,0 +1,233 @@
+body{
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  z-index: 3;
+}
+
+.ul1 {
+  list-style-type:none ;
+  padding-left: 0%;
+  margin-top: 0%;
+  background: #171717;
+  height: 6.7vh;
+}
+
+.ul {
+  list-style-type: none;  
+  margin-top: 14%;
+}
+
+.a1 {
+  text-decoration: none;
+  background: #333333;
+  color: #fff;
+  padding: 0px 15px;
+  font-family: arial;
+  line-height: 50px;
+  display: block;
+  border-right: 1px solid #000000;
+  transition: all 0.3s 0.01s ease;
+  height: 6.7vh;
+}
+
+a:hover {
+  background: #505050;
+}
+
+.limenu {
+  float: left;
+  position: relative;
+}
+
+li > ul {
+  position: absolute;
+  top: 25px;
+  display: none;
+}
+
+li:hover > ul {
+  display: block;
+  width: 250px;
+}
+
+li:hover > ul > li {
+  float: none;
+  margin-left:-100px;
+  margin-top:25px ;
+}
+
+.logo {
+  position: absolute;
+  width: 30px;
+  left: 1300px;
+  top: 5px;
+}
+
+/* добавляем стили для бургер-меню */
+
+.burger {
+  display: none;
+}
+
+.burger .line {
+  width: 24%;
+  height: 10%;
+  background-color: #ff0000;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .ul1 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #171717;
+    padding: 20px;
+  }
+  
+  .limenu {
+    width: 100%;
+    float: none;
+    background-color: #ff0000;
+  }
+  
+  .burger  {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .burger .line {
+    width: 24px;
+    height: 3px;
+    background-color: #ff0303;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .limenu:hover > ul {
+    display: none;
+  }
+  
+  .burger.active .line:nth-child(1),
+  .burger.active .line:nth-child(3) {
+    transform: rotate(45deg);
+    background-color: #ff0303;
+  }
+  
+  .burger.active .line:nth-child(2) {
+    background-color: #ff0303;
+    opacity: 0;
+  }
+  
+  .burger.active .line:nth-child(4) {
+    transform: rotate(-45deg);
+    background-color: #ff0303;
+  }
+  
+  .burger.active + .ul1 {
+    display: block;
+  }
+}
+.injected-svg{
+  position: absolute;
+  margin-left: 85vw;
+  margin-top: -10vh;
+  z-index: 100;
+}
+.button{
+    border: 2px solid yellow;
+    width: 15%;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 180px;
+    margin-top: 5vh;
+}
+.button:hover{
+    background-color: yellow;
+}
+.spis{
+    list-style: none;
+    margin-left: 56px;
+    margin-top: 10px;
+    background: url(../../galk.png);
+    background-size: contain;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    font-size: 20px;
+}
+.df{
+    margin-top: 100px;
+    background-color: #333333;
+    height: 300px;
+    width: 100%;
+}
+.pf1{
+    padding-top: 50px;
+    padding-left: 100px;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+.img_all{
+    border-radius: 10px;
+}
+.tm1{
+    margin-left: 100px;
+    margin-top: 0px;
+    background-color: #fff;
+    padding: 0;
+}
+.tmp{
+    color: #fff;
+    margin-left:145px;
+    margin-top: -42px;
+}
+.tm2{
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: #fff;
+}
+.tmp2{
+    color: #fff;
+    margin-left: 145px;
+    margin-top: -42px;
+}
+.vkk{
+    float: right;
+    background-color:rgb(76, 117, 163);
+    margin-right: 500px;
+    margin-top: -165px;
+}
+.inst{
+    float: right;
+    margin-right: 430px;
+    margin-top: -165px;
+}
+.fc{
+    float: right;
+    margin-top: -165px;
+    margin-right: 360px;
+}
+.tw{
+    float: right;
+    margin-top: -165px;
+    background-color: #fff;
+    margin-right: 290px;
+}

@@ -1,0 +1,56 @@
+{
+  "trainings": [
+  {
+  "class": "h1_tren tr_s1",
+  "name": "ТРЕНИРОВКИ SPECIAL",
+  "info": {
+  "class": "inf dtr1",
+  "sessions": {
+  "name": "1 тренировка",
+  "price": 35,
+  "currency": "руб."
+  },
+  "button": "купить"
+  }
+  },
+  {
+  "class": "h1_tren tr_s2",
+  "name": "ТРЕНИРОВКИ EXPERT",
+  "info": {
+  "class": "inf dtr2",
+  "sessions": {
+  "name": "1 тренировка",
+  "price": 45,
+  "currency": "руб."
+  },
+  "button": "купить"
+  }
+  },
+  {
+  "class": "h1_tren tr_s3",
+  "name": "ТРЕНИРОВКИ EXPERT+",
+  "info": {
+  "class": "inf dtr3",
+  "sessions": {
+  "name": "1 тренировка",
+  "price": 60,
+  "currency": "руб."
+  },
+  "button": "купить"
+  }
+  },
+  {
+  "class": "h1_tren tr_s4",
+  "name": "ТРЕНИРОВКИ В МИНИ-ГРУППЕ",
+  "info": {
+  "class": "inf dtr4",
+  "sessions": {
+  "name": "1 тренировка",
+  "price": 17,
+  "currency": "руб."
+  },
+  "button": "купить"
+  }
+  }
+  ]
+  }

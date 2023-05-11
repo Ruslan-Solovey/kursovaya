@@ -1,0 +1,311 @@
+body{
+    background-color:azure;
+    margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   overflow-x: hidden;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  z-index: 3;
+}
+
+.ul1 {
+  list-style-type:none ;
+  padding-left: 0%;
+  margin-top: 0%;
+  background: #171717;
+  height: 6.7vh;
+}
+
+.ul {
+  list-style-type: none;  
+  margin-top: 14%;
+}
+
+.a1 {
+  text-decoration: none;
+  background: #333333;
+  color: #fff;
+  padding: 0px 15px;
+  font-family: arial;
+  line-height: 50px;
+  display: block;
+  border-right: 1px solid #000000;
+  transition: all 0.3s 0.01s ease;
+  height: 6.7vh;
+}
+
+a:hover {
+  background: #505050;
+}
+
+.limenu {
+  float: left;
+  position: relative;
+}
+
+li > ul {
+  position: absolute;
+  top: 25px;
+  display: none;
+}
+
+li:hover > ul {
+  display: block;
+  width: 250px;
+  margin-left:-100px;
+  margin-top:25px ;
+}
+
+li:hover > ul > li {
+  float: none;
+}
+
+.logo {
+  position: absolute;
+  width: 30px;
+  left: 1300px;
+  top: 5px;
+}
+
+/* добавляем стили для бургер-меню */
+
+.burger {
+  display: none;
+}
+
+.burger .line {
+  width: 24%;
+  height: 10%;
+  background-color: #ff0000;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .ul1 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #171717;
+    padding: 20px;
+  }
+  
+  .limenu {
+    width: 100%;
+    float: none;
+    background-color: #ff0000;
+  }
+  
+  .burger  {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .burger .line {
+    width: 24px;
+    height: 3px;
+    background-color: #ff0303;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .limenu:hover > ul {
+    display: none;
+  }
+  
+  .burger.active .line:nth-child(1),
+  .burger.active .line:nth-child(3) {
+    transform: rotate(45deg);
+    background-color: #ff0303;
+  }
+  
+  .burger.active .line:nth-child(2) {
+    background-color: #ff0303;
+    opacity: 0;
+  }
+  
+  .burger.active .line:nth-child(4) {
+    transform: rotate(-45deg);
+    background-color: #ff0303;
+  }
+  
+  .burger.active + .ul1 {
+    display: block;
+  }
+}
+.injected-svg{
+  position: absolute;
+  margin-left: 85vw;
+  margin-top: -10vh;
+  z-index: 100;
+}
+.image-container {
+    position: relative;
+    width: 100vw;
+    max-width: 250px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(255, 247, 0);
+    border-radius: 5px;
+    margin-left: 7vw;
+    margin-top: 5vh;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .text-overlay {
+    opacity: 1;
+  }
+  
+  .text-overlay h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .text-overlay p {
+    margin-bottom: 0;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+
+
+  .df{
+    margin-top: 4vh;
+    background-color: #333333;
+    height: 37vh;
+    width: 100vw;
+  }
+  .pf1{
+    padding-top: 5vh;
+    padding-left: 5vw;
+    color: yellow;
+    font-size: 3vh;
+    font-weight: bold;
+  }
+  .img_all{
+    border-radius: 10px;
+  }
+  .tm1{
+    margin-left: 6vw;
+    margin-top: 0px;
+    background-color: #fff;
+    padding: 0;
+  }
+  .tmp{
+    height: 0vh;
+    display: inline;
+    color: #fff;
+  }
+  .tm2{
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: #fff;
+  }
+  .tmp2{
+    display: inline;
+    color: #fff;
+  }
+  .vkk{
+    float: right;
+    background-color:rgb(76, 117, 163);
+    margin-right: 3vw;
+  }
+  .inst{
+    float: right;
+    margin-right: 3vw;
+  }
+  .fc{
+    float: right;
+    margin-right: 3vw;
+  }
+  .tw{
+    float: right;
+    background-color: #fff;
+    margin-right: 3vw;
+  }
+  @media (max-width: 480px){
+    p{
+      font-size: 2.2vw;
+    }
+    .img1{
+      margin-left: 24vw;
+      width: 55vw;
+      margin-bottom: 5vh;
+    }
+    .spis{
+      background-image: none;
+      list-style-type:circle ;
+      font-size: 2.5vw;
+    }
+    .img2{
+      margin-left: 25vw;
+      width: 55vw;
+      margin-top: 2vh;
+    }
+    .fil{
+      display: block;
+      width: 55vw;
+      margin-left: 25vw;
+    }
+    .img_all{
+      width: 8vw;
+  }        
+  .tm2{
+      display: block;
+      margin-left: 6vw;
+  }
+  .tmp2{
+      display: inline-block;
+      margin-left: 7vw;
+  }
+  .n1{
+     margin-top: 3vh;
+     margin-bottom: 10vh;
+     font-size: 75%; 
+  }
+  .vkk{
+      margin-top: -10vh;
+  }
+  .fc{
+      margin-top: -10vh;
+  }
+  .image-container{
+    margin-left: 10vh;  
+  }
+  }
+  
+
+  
